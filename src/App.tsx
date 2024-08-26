@@ -1,13 +1,10 @@
+import ListaDePosts from "./pages/ListaDePosts"
 
 
 function App() {
 
   return (
-    <>
-    <h1 className="text-red-500">
-      Olá
-    </h1>
-    </>
+    <ListaDePosts />
   )
 }
 

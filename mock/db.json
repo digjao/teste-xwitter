@@ -1,9 +1,151 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": "4",
+      "title": "TESTE1",
+      "content": "TESTE1",
+      "userId": 2
+    },
+    {
+      "id": "5",
+      "title": "Introduction to Node.js",
+      "content": "Node.js allows you to build server-side applications with JavaScript.",
+      "userId": 1
+    },
+    {
+      "id": "6",
+      "title": "Building REST APIs with Express",
+      "content": "Express is a minimal web framework for Node.js that allows you to create REST APIs.",
+      "userId": 3
+    },
+    {
+      "id": "7",
+      "title": "Mastering Flexbox",
+      "content": "Learn how to use CSS Flexbox to create flexible and responsive layouts.",
+      "userId": 1
+    },
+    {
+      "id": "8",
+      "title": "Introduction to MongoDB",
+      "content": "MongoDB is a NoSQL database that stores data in JSON-like documents.",
+      "userId": 3
+    },
+    {
+      "id": "9",
+      "title": "React Hooks Explained",
+      "content": "React Hooks allow you to use state and other features without writing a class.",
+      "userId": 2
+    },
+    {
+      "id": "10",
+      "title": "Understanding JavaScript Closures",
+      "content": "Closures are a fundamental concept in JavaScript for managing scope and variables.",
+      "userId": 1
+    },
+    {
+      "id": "11",
+      "title": "Introduction to Webpack",
+      "content": "Webpack is a module bundler for JavaScript applications.",
+      "userId": 2
+    },
+    {
+      "id": "12",
+      "title": "State Management with Redux",
+      "content": "Redux is a predictable state container for JavaScript apps.",
+      "userId": 3
+    },
+    {
+      "id": "13",
+      "title": "Responsive Web Design",
+      "content": "Learn the principles of responsive web design to create mobile-friendly websites.",
+      "userId": 1
+    },
+    {
+      "id": "14",
+      "title": "Building Single Page Applications with React Router",
+      "content": "React Router allows you to handle routing in single-page applications.",
+      "userId": 2
+    },
+    {
+      "id": "15",
+      "title": "Introduction to GraphQL",
+      "content": "GraphQL is a query language for APIs and a runtime for executing those queries.",
+      "userId": 3
+    },
+    {
+      "id": "16",
+      "title": "Building Real-time Applications with Socket.io",
+      "content": "Socket.io enables real-time, bidirectional communication between web clients and servers.",
+      "userId": 1
+    },
+    {
+      "id": "17",
+      "title": "CSS Grid Layout",
+      "content": "CSS Grid Layout is a powerful layout system available in CSS.",
+      "userId": 2
+    },
+    {
+      "id": "18",
+      "title": "Understanding Asynchronous JavaScript",
+      "content": "Learn how to handle asynchronous operations in JavaScript using callbacks, promises, and async/await.",
+      "userId": 3
+    },
+    {
+      "id": "19",
+      "title": "Introduction to Testing with Jest",
+      "content": "Jest is a JavaScript testing framework with a focus on simplicity.",
+      "userId": 1
+    },
+    {
+      "id": "20",
+      "title": "Optimizing Web Performance",
+      "content": "Learn techniques to improve the performance of your web applications.",
+      "userId": 2
+    },
+    {
+      "id": "21",
+      "title": "Introduction to Docker",
+      "content": "Docker is a tool designed to make it easier to create, deploy, and run applications by using containers.",
+      "userId": 3
+    },
+    {
+      "id": "22",
+      "title": "Building RESTful APIs with Django",
+      "content": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "userId": 1
+    },
+    {
+      "id": "23",
+      "title": "Version Control with Git",
+      "content": "Learn how to use Git for version control in your projects.",
+      "userId": 2
+    },
+    {
+      "id": "24",
+      "title": "Building Mobile Apps with React Native",
+      "content": "React Native lets you create truly native apps and doesn't compromise on your users' experience.",
+      "userId": 3
+    },
+    {
+      "id": "25",
+      "title": "Introduction to Python",
+      "content": "Python is a powerful programming language that is easy to learn and fun to use.",
+      "userId": 1
+    },
+    {
+      "id": "26",
+      "title": "Exploring Data Structures and Algorithms",
+      "content": "Learn the fundamentals of data structures and algorithms to improve your coding skills.",
+      "userId": 2
+    },
+    {
+      "id": "27",
+      "title": "Server-side Rendering with Next.js",
+      "content": "Next.js is a React framework that enables server-side rendering and static site generation.",
+      "userId": 3
+    }
+  ],
+  "users": {
+    "name": "typicode"
   }
+}
