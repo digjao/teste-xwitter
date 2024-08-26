@@ -1,30 +1,6 @@
 {
   "posts": [
     {
-      "id": "4",
-      "title": "TESTE1",
-      "content": "TESTE1",
-      "userId": 2
-    },
-    {
-      "id": "5",
-      "title": "Introduction to Node.js",
-      "content": "Node.js allows you to build server-side applications with JavaScript.",
-      "userId": 1
-    },
-    {
-      "id": "6",
-      "title": "Building REST APIs with Express",
-      "content": "Express is a minimal web framework for Node.js that allows you to create REST APIs.",
-      "userId": 3
-    },
-    {
-      "id": "7",
-      "title": "Mastering Flexbox",
-      "content": "Learn how to use CSS Flexbox to create flexible and responsive layouts.",
-      "userId": 1
-    },
-    {
       "id": "8",
       "title": "Introduction to MongoDB",
       "content": "MongoDB is a NoSQL database that stores data in JSON-like documents.",
@@ -143,6 +119,23 @@
       "title": "Server-side Rendering with Next.js",
       "content": "Next.js is a React framework that enables server-side rendering and static site generation.",
       "userId": 3
+    },
+    {
+      "id": "8f48",
+      "title": "teste",
+      "content": "teste"
+    },
+    {
+      "id": "d71b",
+      "title": "Oin",
+      "content": "oin",
+      "userId": 1
+    },
+    {
+      "id": "1d78",
+      "title": "EAE",
+      "content": "EAE",
+      "userId": 1
     }
   ],
   "users": {

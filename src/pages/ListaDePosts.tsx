@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getPosts, deletePost, updatePost } from '../services/postServices';
+import { getPosts, deletePost, updatePost, createPost } from '../services/postServices';
 import { Post } from '../types';
 
 const PostList: React.FC = () => {
@@ -9,16 +9,19 @@ const PostList: React.FC = () => {
   const [updatedTitle, setUpdatedTitle] = useState('');
   const [updatedContent, setUpdatedContent] = useState('');
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const posts = await getPosts();
-        setPosts(posts);
-      } catch (error) {
-        console.error("Erro ao buscar posts", error);
-      }
-    };
+  const [newTitle, setNewTitle] = useState('');
+  const [newContent, setNewContent] = useState('');
 
+  const fetchPosts = async () => {
+    try {
+      const posts = await getPosts();
+      setPosts(posts);
+    } catch (error) {
+      console.error("Erro ao buscar posts", error);
+    }
+  };
+
+  useEffect(() => {
     fetchPosts();
   }, []);
 
@@ -27,6 +30,7 @@ const PostList: React.FC = () => {
       if (confirm("Realmente deseja apagar?")) {
         await deletePost(id);
         setPosts(posts.filter(post => post.id !== id));
+        fetchPosts();
         alert("Registro apagado com sucesso");
       }
     } catch (error) {
@@ -58,14 +62,54 @@ const PostList: React.FC = () => {
     }
   };
 
+  const handleCreatePost = async () => {
+    try {
+      const newPost = {
+        title: newTitle,
+        content: newContent,
+        userId: 1
+      };
+      await createPost(newPost);
+      fetchPosts();
+      setNewTitle('');
+      setNewContent('');
+      alert("Post criado com sucesso!")
+    } catch (error) {
+      console.error("Erro ao criar post", error);
+    }
+  };
+
+
   return (
     <div className='grid grid-cols-3 h-screen text-white bg-black'>
-      <div className='p-4'>
-        <h2 className='text-6xl p-4'>Menu</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sair</a></li>
-        </ul>
+      <div className='p-4 flex flex-col'>
+        <h2 className='text-6xl p-4 flex justify-center'>Menu</h2>
+        <div>
+        <h2 className='text-2xl mb-4'>Criar Novo Post</h2>
+          <label className='block mb-2'>
+            Título:
+            <input
+              type='text'
+              value={newTitle}
+              onChange={(e) => setNewTitle(e.target.value)}
+              className='block w-full p-2 mt-1 bg-gray-800 border border-gray-600 rounded'
+            />
+          </label>
+          <label className='block mb-4'>
+            Conteúdo:
+            <textarea
+              value={newContent}
+              onChange={(e) => setNewContent(e.target.value)}
+              className='block w-full p-2 mt-1 bg-gray-800 border border-gray-600 rounded'
+            />
+          </label>
+          <button
+            onClick={handleCreatePost}
+            className='bg-blue-500 text-white rounded border border-black p-2'
+          >
+            Criar Post
+          </button>
+        </div>
       </div>
       <div className='col-span-1 flex flex-col items-center justify-start border border-white p-4'>
         <h1 className='text-6xl p-4'>Posts</h1>
