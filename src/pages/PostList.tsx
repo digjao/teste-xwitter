@@ -44,7 +44,7 @@ const PostList: React.FC = () => {
   const handleSavePost = async (title: string, content: string, id?: number) => {
     try {
       if (id) {
-        const updatedPost = { id, title, content, userId: 1, createdAt: new Date().toISOString()  };
+        const updatedPost = { id, title, content, userId: 1, createdAt: new Date().toISOString() };
         await updatePost(id, updatedPost);
         setPosts(posts.map(post => (post.id === id ? updatedPost : post)));
       } else {
@@ -81,7 +81,7 @@ const PostList: React.FC = () => {
       </div>
       <div className='col-span-1 flex flex-col items-center justify-start border border-white p-4'>
         <h1 className='text-6xl p-4'>Posts</h1>
-        <div className='flex flex-wrap gap-4 justify-center'>
+        <div className='flex flex-wrap gap-4 justify-center w-full overflow-x-hidden'>
           {posts.map(post => (
             <PostItem
               key={post.id}
@@ -97,12 +97,11 @@ const PostList: React.FC = () => {
         {expandedPost && (
           <div>
             <div className='flex flex-col'>
-                <h1 className='text-6xl p-4 flex justify-center'>Posts</h1>
+              <h1 className='text-6xl p-4 flex justify-center'>Posts extendidos</h1>
             </div>
             <div className='w-full p-4 border border-gray-300 bg-gray-800 rounded'>
-                <h2 className='text-2xl font-bold mb-2'>{expandedPost.title}</h2>
-                <p>{expandedPost.content}</p>
-
+              <h2 className='text-2xl font-bold mb-2'>{expandedPost.title}</h2>
+              <p className='break-words'>{expandedPost.content}</p>
             </div>
           </div>
         )}

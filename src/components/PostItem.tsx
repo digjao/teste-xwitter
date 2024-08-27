@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Post } from '../types';
 
 interface PostItemProps {
@@ -9,16 +9,16 @@ interface PostItemProps {
 }
 
 const PostItem: React.FC<PostItemProps> = ({ post, onDelete, onEdit, onViewMore }) => {
+  
+  const [isExpanded, setIsExpanded] = useState(false);
+  
   return (
+    
     <div className='w-full p-4 border border-gray-300 bg-gray-800 rounded'>
       <h2 className='text-xl font-bold'>{post.title}</h2>
       <div
-        className='text-white max-h-20 overflow-hidden'
-        style={{ transition: 'max-height 0.3s ease' }}
-      >
-        {post.content}
-      </div>
-      <div className=''>
+        className={`text-white ${isExpanded ? 'max-h-screen' : 'max-h-20'} max-h-20 overflow-hidden text-ellipsis`}>{post.content}</div>
+      <div className=''>  
         <button
           className='bg-red-500 text-white rounded border border-black p-2 mt-2 mr-4'
           onClick={() => onDelete(post.id)}
