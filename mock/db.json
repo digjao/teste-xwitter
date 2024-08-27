@@ -1,141 +1,46 @@
 {
   "posts": [
     {
-      "id": "8",
-      "title": "Introduction to MongoDB",
-      "content": "MongoDB is a NoSQL database that stores data in JSON-like documents.",
-      "userId": 3
+      "id": "3665",
+      "title": "OUT",
+      "content": "OIN",
+      "userId": 1,
+      "createdAt": "2024-08-27T17:57:11.843Z"
     },
     {
-      "id": "9",
-      "title": "React Hooks Explained",
-      "content": "React Hooks allow you to use state and other features without writing a class.",
-      "userId": 2
+      "id": "9b87",
+      "title": "TESTE",
+      "content": "",
+      "userId": 1,
+      "createdAt": "2024-08-27T17:57:36.643Z"
     },
     {
-      "id": "10",
-      "title": "Understanding JavaScript Closures",
-      "content": "Closures are a fundamental concept in JavaScript for managing scope and variables.",
-      "userId": 1
+      "id": "3ad7",
+      "title": "NOVO",
+      "content": "NOVO",
+      "userId": 1,
+      "createdAt": "2024-08-27T17:57:43.179Z"
     },
     {
-      "id": "11",
-      "title": "Introduction to Webpack",
-      "content": "Webpack is a module bundler for JavaScript applications.",
-      "userId": 2
+      "id": "f8f4",
+      "title": "NOVO DE NOVO",
+      "content": "NOVO MAIS UMA VEZ",
+      "userId": 1,
+      "createdAt": "2024-08-27T17:57:51.763Z"
     },
     {
-      "id": "12",
-      "title": "State Management with Redux",
-      "content": "Redux is a predictable state container for JavaScript apps.",
-      "userId": 3
+      "id": "961e",
+      "title": "TESTE",
+      "content": "TESTE",
+      "userId": 1,
+      "createdAt": "2024-08-27T17:58:00.587Z"
     },
     {
-      "id": "13",
-      "title": "Responsive Web Design",
-      "content": "Learn the principles of responsive web design to create mobile-friendly websites.",
-      "userId": 1
-    },
-    {
-      "id": "14",
-      "title": "Building Single Page Applications with React Router",
-      "content": "React Router allows you to handle routing in single-page applications.",
-      "userId": 2
-    },
-    {
-      "id": "15",
-      "title": "Introduction to GraphQL",
-      "content": "GraphQL is a query language for APIs and a runtime for executing those queries.",
-      "userId": 3
-    },
-    {
-      "id": "16",
-      "title": "Building Real-time Applications with Socket.io",
-      "content": "Socket.io enables real-time, bidirectional communication between web clients and servers.",
-      "userId": 1
-    },
-    {
-      "id": "17",
-      "title": "CSS Grid Layout",
-      "content": "CSS Grid Layout is a powerful layout system available in CSS.",
-      "userId": 2
-    },
-    {
-      "id": "18",
-      "title": "Understanding Asynchronous JavaScript",
-      "content": "Learn how to handle asynchronous operations in JavaScript using callbacks, promises, and async/await.",
-      "userId": 3
-    },
-    {
-      "id": "19",
-      "title": "Introduction to Testing with Jest",
-      "content": "Jest is a JavaScript testing framework with a focus on simplicity.",
-      "userId": 1
-    },
-    {
-      "id": "20",
-      "title": "Optimizing Web Performance",
-      "content": "Learn techniques to improve the performance of your web applications.",
-      "userId": 2
-    },
-    {
-      "id": "21",
-      "title": "Introduction to Docker",
-      "content": "Docker is a tool designed to make it easier to create, deploy, and run applications by using containers.",
-      "userId": 3
-    },
-    {
-      "id": "22",
-      "title": "Building RESTful APIs with Django",
-      "content": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
-      "userId": 1
-    },
-    {
-      "id": "23",
-      "title": "Version Control with Git",
-      "content": "Learn how to use Git for version control in your projects.",
-      "userId": 2
-    },
-    {
-      "id": "24",
-      "title": "Building Mobile Apps with React Native",
-      "content": "React Native lets you create truly native apps and doesn't compromise on your users' experience.",
-      "userId": 3
-    },
-    {
-      "id": "25",
-      "title": "Introduction to Python",
-      "content": "Python is a powerful programming language that is easy to learn and fun to use.",
-      "userId": 1
-    },
-    {
-      "id": "26",
-      "title": "Exploring Data Structures and Algorithms",
-      "content": "Learn the fundamentals of data structures and algorithms to improve your coding skills.",
-      "userId": 2
-    },
-    {
-      "id": "27",
-      "title": "Server-side Rendering with Next.js",
-      "content": "Next.js is a React framework that enables server-side rendering and static site generation.",
-      "userId": 3
-    },
-    {
-      "id": "8f48",
-      "title": "teste",
-      "content": "teste"
-    },
-    {
-      "id": "d71b",
-      "title": "Oin",
-      "content": "oin",
-      "userId": 1
-    },
-    {
-      "id": "1d78",
-      "title": "EAE",
-      "content": "EAE",
-      "userId": 1
+      "id": "50d9",
+      "title": "BECHLER1",
+      "content": "BECHLER1",
+      "userId": 1,
+      "createdAt": "2024-08-27T18:01:03.731Z"
     }
   ],
   "users": {
