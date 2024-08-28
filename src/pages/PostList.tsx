@@ -63,7 +63,7 @@ const PostList: React.FC = () => {
   };
 
   return (
-    <div className='grid grid-cols-3 h-screen text-white bg-black'>
+    <div className='grid grid-cols-3 h-screen text-white bg-black overflow-hidden'>
       <div className='p-4 flex flex-col'>
         <h2 className='text-6xl p-4 flex justify-center'>Menu</h2>
         <div>
@@ -96,12 +96,12 @@ const PostList: React.FC = () => {
       <div className='p-4 border border-white'>
         {expandedPost && (
           <div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col overflow-hidden'>
               <h1 className='text-6xl p-4 flex justify-center'>Posts extendidos</h1>
             </div>
             <div className='w-full p-4 border border-gray-300 bg-gray-800 rounded'>
               <h2 className='text-2xl font-bold mb-2'>{expandedPost.title}</h2>
-              <p className='break-words'>{expandedPost.content}</p>
+              <p className='break-words text-ellipsis'>{expandedPost.content}</p>
             </div>
           </div>
         )}
