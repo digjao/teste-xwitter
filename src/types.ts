@@ -5,3 +5,15 @@ export interface Post {
     userId: number;
     createdAt?: string;
   }
+
+export interface User {
+  id: number;
+  email: string;
+  password: string;
+}
+
+export interface LoginResponse {
+  token: string;
+  status: number;
+  data: string;
+}

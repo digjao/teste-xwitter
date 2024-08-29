@@ -36,14 +36,64 @@
       "createdAt": "2024-08-27T17:58:00.587Z"
     },
     {
-      "id": "50d9",
-      "title": "BECHLER1",
-      "content": "",
+      "title": "aaa",
+      "content": "aa",
       "userId": 1,
-      "createdAt": "2024-08-28T19:01:41.163Z"
+      "createdAt": "2024-08-29T00:58:28.100Z",
+      "id": "mR0ldvq"
+    },
+    {
+      "title": "bbb",
+      "content": "bbb",
+      "userId": 1,
+      "createdAt": "2024-08-29T00:58:38.036Z",
+      "id": "uuezIBK"
+    },
+    {
+      "title": "ccc",
+      "content": "ccc",
+      "userId": 1,
+      "createdAt": "2024-08-29T00:58:40.900Z",
+      "id": "LoKj_W_"
+    },
+    {
+      "title": "ddd",
+      "content": "dd",
+      "userId": 1,
+      "createdAt": "2024-08-29T00:58:45.768Z",
+      "id": "b6frDWz"
     }
   ],
-  "users": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "id": "1",
+      "username": "exampleUser",
+      "email": "user@example.com",
+      "password": "hashedPassword"
+    },
+    {
+      "id": "c925",
+      "username": "teste",
+      "email": "oliveiraneto.joaopedro@live.com",
+      "password": "teste"
+    },
+    {
+      "id": "269b",
+      "username": "testeaa",
+      "email": "oliveiraneto.joaopedro@live.com",
+      "password": "testeaa"
+    },
+    {
+      "id": "f4a0",
+      "username": "asd",
+      "email": "taynaramoura.2510@outlook.com",
+      "password": "asd"
+    },
+    {
+      "id": "307a",
+      "username": "Bacon Strip Precooked aa",
+      "email": "taynaramoura.2510@outlook.com",
+      "password": "asdasdasd"
+    }
+  ]
 }

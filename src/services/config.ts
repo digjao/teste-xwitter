@@ -8,5 +8,6 @@ export const Api = axios.create({
     'Accept': 'application/json',
     
   },
-  timeout: 30000
+  timeout: 30000,
+  withCredentials: true
 });
