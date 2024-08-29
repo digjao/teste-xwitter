@@ -2,7 +2,7 @@ import { Post, User, LoginResponse } from "../types";
 import { Api } from "./config";
 
 
-export const getPosts = async (page: number = 1, limit: number = 5): Promise<Post[]> => {
+export const getPosts = async (page: number = 1, limit: number = 4): Promise<Post[]> => {
     const response = await Api.get(`http://localhost:3333/posts?_sort=createdAt&_order=desc&_page=${page}&_limit=${limit}`);
     if (!response) {
         throw new Error('Erro ao buscar posts');

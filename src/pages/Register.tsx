@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
 import { registerUser } from '../services/postServices';
+import { useNavigate } from 'react-router-dom';
 
 const Register: React.FC = () => {
+    
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate()
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
             await registerUser({ username, email, password });
+            navigate('/posts')
 
         } catch (error) {
             console.error('Erro ao registrar', error);
         }
     };
-
 
     return (
         <div className='h-screen text-white bg-black'>
@@ -26,27 +30,27 @@ const Register: React.FC = () => {
                     <form onSubmit={handleSubmit}>
                         <input
                             type="text"
-                            className=" border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF]" 
+                            className="text-black border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF]"
                             placeholder="Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
-                    
+
                         <input
                             type="text"
-                            className="text-black border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF]" 
+                            className="text-black border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF]"
                             placeholder="Nome do usuário"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                         />
-                        <input 
-                            type="password" 
-                            className="text-black border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF] " 
+                        <input
+                            type="password"
+                            className="text-black border-b-2 border-black w-full text-xl px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 mb-5 bg-[#EFEFEF] "
                             placeholder="Senha"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        
+
                         <div className="flex justify-center mt-5">
                             <button type="submit" className="border-2 bg-[#7B66FD] text-white rounded-md py-1 w-48 text-xl border-black">Criar conta</button>
                         </div>

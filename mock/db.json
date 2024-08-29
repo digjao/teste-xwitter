@@ -1,99 +1,89 @@
 {
   "posts": [
     {
-      "id": "3665",
-      "title": "OUT",
-      "content": "OIN",
+      "id": "1",
+      "title": "Nova Música de Taylor Swift",
+      "content": "Taylor Swift lançou uma nova música incrível chamada 'Wildest Dreams'. Confira o vídeo oficial no YouTube!",
       "userId": 1,
-      "createdAt": "2024-08-27T17:57:11.843Z"
+      "createdAt": "2024-08-29T10:00:00.000Z"
     },
     {
-      "id": "9b87",
-      "title": "TESTE",
-      "content": "",
+      "id": "2",
+      "title": "Álbum Lançado por Ed Sheeran",
+      "content": "Ed Sheeran lançou seu novo álbum 'Subtract'. As músicas são fantásticas e mostram um lado mais introspectivo do artista.",
       "userId": 1,
-      "createdAt": "2024-08-27T17:57:36.643Z"
+      "createdAt": "2024-08-29T11:15:00.000Z"
     },
     {
-      "id": "3ad7",
-      "title": "NOVO",
-      "content": "NOVO",
+      "id": "3",
+      "title": "Festival de Música no Rio",
+      "content": "O Festival de Música no Rio de Janeiro começa neste final de semana. Prepare-se para performances de artistas internacionais e locais!",
       "userId": 1,
-      "createdAt": "2024-08-27T17:57:43.179Z"
+      "createdAt": "2024-08-29T12:30:00.000Z"
     },
     {
-      "id": "f8f4",
-      "title": "NOVO DE NOVO",
-      "content": "NOVO MAIS UMA VEZ",
+      "id": "4",
+      "title": "Review do Novo Álbum de Billie Eilish",
+      "content": "O novo álbum de Billie Eilish, 'Happier Than Ever', está dominando as paradas. Veja nossa análise detalhada e o que achamos das novas faixas.",
       "userId": 1,
-      "createdAt": "2024-08-27T17:57:51.763Z"
+      "createdAt": "2024-08-29T13:45:00.000Z"
     },
     {
-      "id": "961e",
-      "title": "TESTE",
-      "content": "TESTE",
+      "id": "5",
+      "title": "A História do Rock",
+      "content": "Explore a história do rock desde os anos 60 até os dias atuais. Descubra como o gênero evoluiu e os principais artistas que marcaram época.",
       "userId": 1,
-      "createdAt": "2024-08-27T17:58:00.587Z"
+      "createdAt": "2024-08-29T14:00:00.000Z"
     },
     {
-      "title": "aaa",
-      "content": "aa",
+      "id": "6",
+      "title": "Playlist de Verão",
+      "content": "Crie a trilha sonora perfeita para o seu verão com nossa playlist de músicas animadas e alegres. Inclui artistas como Dua Lipa e Calvin Harris.",
       "userId": 1,
-      "createdAt": "2024-08-29T00:58:28.100Z",
-      "id": "mR0ldvq"
+      "createdAt": "2024-08-29T15:10:00.000Z"
     },
     {
-      "title": "bbb",
-      "content": "bbb",
+      "id": "8",
+      "title": "Novidades do Mundo do Jazz",
+      "content": "Confira as últimas novidades do mundo do jazz, incluindo lançamentos de novos álbuns e entrevistas com artistas renomados.",
       "userId": 1,
-      "createdAt": "2024-08-29T00:58:38.036Z",
-      "id": "uuezIBK"
+      "createdAt": "2024-08-29T17:30:00.000Z"
     },
     {
-      "title": "ccc",
-      "content": "ccc",
+      "title": "Entrevista com um DJ famoso",
+      "content": "Leia nossa entrevista exclusiva com um dos DJs mais famosos do mundo. Descubra o que inspira suas músicas e como ele vê o futuro da música eletrônica.",
       "userId": 1,
-      "createdAt": "2024-08-29T00:58:40.900Z",
-      "id": "LoKj_W_"
+      "createdAt": "2024-08-29T17:43:57.593Z",
+      "id": "2E8Xh7g"
     },
     {
-      "title": "ddd",
-      "content": "dd",
+      "title": "História dos Videoclipes",
+      "content": "Um mergulho na evolução dos videoclipes musicais. Desde os primeiros vídeos na MTV até os lançamentos mais inovadores de hoje.",
       "userId": 1,
-      "createdAt": "2024-08-29T00:58:45.768Z",
-      "id": "b6frDWz"
+      "createdAt": "2024-08-29T17:44:20.232Z",
+      "id": "31V6vnp"
+    },
+    {
+      "title": "teste",
+      "content": "teste",
+      "userId": 1,
+      "createdAt": "2024-08-29T17:46:33.276Z",
+      "id": "RpwYCdz"
     }
   ],
   "users": [
     {
-      "id": "1",
-      "username": "exampleUser",
-      "email": "user@example.com",
-      "password": "hashedPassword"
-    },
-    {
-      "id": "c925",
-      "username": "teste",
-      "email": "oliveiraneto.joaopedro@live.com",
-      "password": "teste"
-    },
-    {
-      "id": "269b",
-      "username": "testeaa",
-      "email": "oliveiraneto.joaopedro@live.com",
-      "password": "testeaa"
-    },
-    {
-      "id": "f4a0",
+      "id": 1,
       "username": "asd",
-      "email": "taynaramoura.2510@outlook.com",
-      "password": "asd"
+      "email": "user@example.com",
+      "password": "asd",
+      "token": "oin"
     },
     {
-      "id": "307a",
-      "username": "Bacon Strip Precooked aa",
-      "email": "taynaramoura.2510@outlook.com",
-      "password": "asdasdasd"
+      "username": "teste",
+      "email": "teste@gmail.com",
+      "password": "teste",
+      "id": 2
     }
   ]
 }

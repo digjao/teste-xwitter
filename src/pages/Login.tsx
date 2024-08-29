@@ -18,7 +18,7 @@ const Login: React.FC = () => {
         navigate("/posts")
       }
     } catch (error:any) {
-      console.error('Erro ao fazer login:', error.response ? error.response.data : error.message);
+      console.error('Erro ao fa zer login:', error.response ? error.response.data : error.message);
     }
   };
 
@@ -63,7 +63,7 @@ const Login: React.FC = () => {
           </form>
           <div className="mt-3 flex justify-center">
             <h1 className="font-bold">Não tem uma conta? </h1>
-            <a href="/registro" className="text-[#7B66FD] ml-2">Inscreva-se</a>
+            <a href="/register" className="text-[#7B66FD] ml-2">Inscreva-se</a>
           </div>
         </div>
       </div>

@@ -9,10 +9,12 @@ const PostList: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [expandedPost, setExpandedPost] = useState<Post | null>(null);
+  const [page, setPage] = useState<number>(1); 
+  const [limit] = useState<number>(4);
 
-  const fetchPosts = async () => {
+  const fetchPosts = async (page: number) => {
     try {
-      const posts = await getPosts();
+      const posts = await getPosts(page, limit);
       setPosts(posts);
     } catch (error) {
       console.error('Erro ao buscar posts', error);
@@ -20,15 +22,15 @@ const PostList: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchPosts();
-  }, []);
+    fetchPosts(page); 
+  }, [page]);
 
   const handleDeletePost = async (id: number) => {
     try {
       if (confirm('Realmente deseja apagar?')) {
         await deletePost(id);
         setPosts(posts.filter(post => post.id !== id));
-        fetchPosts();
+        fetchPosts(page);
         alert('Registro apagado com sucesso');
       }
     } catch (error) {
@@ -50,7 +52,7 @@ const PostList: React.FC = () => {
       } else {
         const newPost = { title, content, userId: 1, createdAt: new Date().toISOString() };
         await createPost(newPost);
-        fetchPosts();
+        fetchPosts(page);
       }
       setIsModalOpen(false);
     } catch (error) {
@@ -91,6 +93,23 @@ const PostList: React.FC = () => {
               onViewMore={handleViewMore}
             />
           ))}
+        </div>
+
+        <div className='flex justify-center space-x-4 mt-4'>
+          <button
+            onClick={() => setPage(prev => Math.max(prev - 1, 1))}
+            disabled={page === 1}
+            className='bg-gray-500 text-white p-2 rounded disabled:opacity-50'
+          >
+            Anterior
+          </button>
+          <span className='text-2xl'>{page}</span>
+          <button
+            onClick={() => setPage(prev => prev + 1)}
+            className='bg-gray-500 text-white p-2 rounded'
+          >
+            Próximo
+          </button>
         </div>
       </div>
       <div className='p-4 border border-white'>
